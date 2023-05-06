@@ -27,7 +27,7 @@ create table recetas(
     titulo varchar(50) not null,
     descripcion varchar(50) not null,
     porciones varchar(50) not null,
-    tiempo_preparacion varchar(50) not null,
+    tiempo_preparacion integer not null,
     ingredientes varchar(50) not null,
     instrucciones varchar(50) not null,
     fecha_publicacion date default current_date,
