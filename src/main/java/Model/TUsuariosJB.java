@@ -11,15 +11,7 @@ public class TUsuariosJB {
     public TUsuariosJB() {
     }
 
-    //seleccinar
-    public TUsuariosJB(int ID_Usuario, String nombre, String apellido, String tipo_usuario) {
-        this.ID_Usuario = ID_Usuario;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.tipo_usuario = tipo_usuario;
-    }
-
-    //modificar
+    //modificar y seleccinar
     public TUsuariosJB(int ID_Usuario ,String nombre, String apellido, String email, String contraseña, String tipo_usuario) {
         this.ID_Usuario = ID_Usuario;
         this.nombre = nombre;
