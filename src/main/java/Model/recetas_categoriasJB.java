@@ -1,28 +1,28 @@
 package Model;
 
-public class TRecetas_categoriasJB {
+public class recetas_categoriasJB {
     private int ID_Recetas_categorias;
     private int ID_Recetas;
     private int ID_Categorias;
 
-    public TRecetas_categoriasJB() {
+    public recetas_categoriasJB() {
     }
 
     // seleccinar y modificar
-    public TRecetas_categoriasJB(int ID_Recetas_categorias, int ID_Recetas, int ID_Categorias) {
+    public recetas_categoriasJB(int ID_Recetas_categorias, int ID_Recetas, int ID_Categorias) {
         this.ID_Recetas_categorias = ID_Recetas_categorias;
         this.ID_Recetas = ID_Recetas;
         this.ID_Categorias = ID_Categorias;
     }
 
     // insertar
-    public TRecetas_categoriasJB(int ID_Recetas, int ID_Categorias) {
+    public recetas_categoriasJB(int ID_Recetas, int ID_Categorias) {
         this.ID_Recetas = ID_Recetas;
         this.ID_Categorias = ID_Categorias;
     }
 
     // eliminar
-    public TRecetas_categoriasJB(int ID_Recetas_categorias) {
+    public recetas_categoriasJB(int ID_Recetas_categorias) {
         this.ID_Recetas_categorias = ID_Recetas_categorias;
     }
 

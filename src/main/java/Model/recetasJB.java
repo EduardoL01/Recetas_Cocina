@@ -2,7 +2,7 @@ package Model;
 
 import java.sql.*;
 
-public class TRecetasJB {
+public class recetasJB {
     private int ID_Recetas;
     private String titulo;
     private String descripcion;
@@ -14,11 +14,11 @@ public class TRecetasJB {
     private int ID_Usuario;
     private int ID_Dificultad;
 
-    public TRecetasJB() {
+    public recetasJB() {
     }
 
     // seleccinar
-    public TRecetasJB(int ID_Recetas, String titulo, String descripcion, String porciones, String tiempo_preparacion,
+    public recetasJB(int ID_Recetas, String titulo, String descripcion, String porciones, String tiempo_preparacion,
             String ingredientes, String instrucciones, Date fecha_publicacion, int ID_Usuario, int ID_Dificultad) {
         this.ID_Recetas = ID_Recetas;
         this.titulo = titulo;
@@ -33,7 +33,7 @@ public class TRecetasJB {
     }
 
     // modificar
-    public TRecetasJB(int ID_Recetas, String titulo, String descripcion, String porciones, String tiempo_preparacion,
+    public recetasJB(int ID_Recetas, String titulo, String descripcion, String porciones, String tiempo_preparacion,
             String ingredientes, String instrucciones, int ID_Usuario, int ID_Dificultad) {
         this.ID_Recetas = ID_Recetas;
         this.titulo = titulo;
@@ -47,7 +47,7 @@ public class TRecetasJB {
     }
 
     // insertar
-    public TRecetasJB(String titulo, String descripcion, String porciones, String tiempo_preparacion,
+    public recetasJB(String titulo, String descripcion, String porciones, String tiempo_preparacion,
             String ingredientes, String instrucciones, int ID_Usuario, int ID_Dificultad) {
         this.titulo = titulo;
         this.descripcion = descripcion;
@@ -60,7 +60,7 @@ public class TRecetasJB {
     }
 
     // eliminar
-    public TRecetasJB(int ID_Recetas) {
+    public recetasJB(int ID_Recetas) {
         this.ID_Recetas = ID_Recetas;
     }
 

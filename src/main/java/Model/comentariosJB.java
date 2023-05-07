@@ -2,18 +2,18 @@ package Model;
 
 import java.sql.Date;
 
-public class TComentariosJB {
+public class comentariosJB {
     private int idComentario;
     private String comentario;
     private Date fecha_comentario;
     private int ID_Usuario;
     private int ID_Recetas;
 
-    public TComentariosJB() {
+    public comentariosJB() {
     }
 
     // seleccinar
-    public TComentariosJB(int idComentario, String comentario, Date fecha_comentario, int ID_Usuario, int ID_Recetas) {
+    public comentariosJB(int idComentario, String comentario, Date fecha_comentario, int ID_Usuario, int ID_Recetas) {
         this.idComentario = idComentario;
         this.comentario = comentario;
         this.fecha_comentario = fecha_comentario;
@@ -22,7 +22,7 @@ public class TComentariosJB {
     }
 
     // modificar
-    public TComentariosJB(int idComentario, String comentario, int ID_Usuario, int ID_Recetas) {
+    public comentariosJB(int idComentario, String comentario, int ID_Usuario, int ID_Recetas) {
         this.idComentario = idComentario;
         this.comentario = comentario;
         this.ID_Usuario = ID_Usuario;
@@ -30,14 +30,14 @@ public class TComentariosJB {
     }
 
     // insertar
-    public TComentariosJB(String comentario, int ID_Usuario, int ID_Recetas) {
+    public comentariosJB(String comentario, int ID_Usuario, int ID_Recetas) {
         this.comentario = comentario;
         this.ID_Usuario = ID_Usuario;
         this.ID_Recetas = ID_Recetas;
     }
 
     // eliminar
-    public TComentariosJB(int idComentario) {
+    public comentariosJB(int idComentario) {
         this.idComentario = idComentario;
     }
 

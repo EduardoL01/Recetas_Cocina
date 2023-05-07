@@ -1,6 +1,6 @@
 package Model;
 
-public class TUsuariosJB {
+public class usuariosJB {
     private int ID_Usuario;
     private String nombre;
     private String apellido;
@@ -8,11 +8,11 @@ public class TUsuariosJB {
     private String contraseña;
     private String tipo_usuario;
 
-    public TUsuariosJB() {
+    public usuariosJB() {
     }
 
     //modificar y seleccinar
-    public TUsuariosJB(int ID_Usuario ,String nombre, String apellido, String email, String contraseña, String tipo_usuario) {
+    public usuariosJB(int ID_Usuario ,String nombre, String apellido, String email, String contraseña, String tipo_usuario) {
         this.ID_Usuario = ID_Usuario;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -22,7 +22,7 @@ public class TUsuariosJB {
     }
 
     //insertar
-    public TUsuariosJB(String nombre, String apellido, String email, String contraseña) {
+    public usuariosJB(String nombre, String apellido, String email, String contraseña) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
@@ -30,7 +30,7 @@ public class TUsuariosJB {
     }
 
     //eliminar
-    public TUsuariosJB(int ID_Usuario, String nombre, String apellido, String email, String contraseña) {
+    public usuariosJB(int ID_Usuario, String nombre, String apellido, String email, String contraseña) {
         this.ID_Usuario = ID_Usuario;
     }
 

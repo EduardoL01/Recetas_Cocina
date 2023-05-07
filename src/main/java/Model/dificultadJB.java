@@ -1,14 +1,14 @@
 package Model;
 
-public class TDificultadJB {
+public class dificultadJB {
     private int ID_Dificultad;
     private String dificultad;
 
-    public TDificultadJB() {
+    public dificultadJB() {
     }
 
     //seleccinar
-    public TDificultadJB(int ID_Dificultad, String dificultad) {
+    public dificultadJB(int ID_Dificultad, String dificultad) {
         this.ID_Dificultad = ID_Dificultad;
         this.dificultad = dificultad;
     }

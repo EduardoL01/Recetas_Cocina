@@ -1,25 +1,25 @@
 package Model;
 
-public class TCategoriaJB {
+public class categoriaJB {
     private int ID_Categoria;
     private String nombre;
 
-    public TCategoriaJB() {
+    public categoriaJB() {
     }
 
     // seleccinar y modificar
-    public TCategoriaJB(int iD_Categoria, String nombre) {
+    public categoriaJB(int iD_Categoria, String nombre) {
         ID_Categoria = iD_Categoria;
         this.nombre = nombre;
     }
 
     // insertar
-    public TCategoriaJB(String nombre) {
+    public categoriaJB(String nombre) {
         this.nombre = nombre;
     }
 
     // eliminar
-    public TCategoriaJB(int iD_Categoria) {
+    public categoriaJB(int iD_Categoria) {
         ID_Categoria = iD_Categoria;
     }
 
