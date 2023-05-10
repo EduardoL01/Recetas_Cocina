@@ -1,6 +1,8 @@
 package Model;
 
-public class dificultadJB {
+import java.io.Serializable;
+
+public class dificultadJB implements Serializable {
     private int ID_Dificultad;
     private String dificultad;
 

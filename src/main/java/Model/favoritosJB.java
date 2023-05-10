@@ -1,6 +1,8 @@
 package Model;
 
-public class favoritosJB {
+import java.io.Serializable;
+
+public class favoritosJB implements Serializable {
     private int ID_Favoritos;
     private int ID_Usuario;
     private int ID_Recetas;

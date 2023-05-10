@@ -1,8 +1,10 @@
 package Model;
 
+import java.io.Serializable;
+
 import java.sql.Date;
 
-public class comentariosJB {
+public class comentariosJB implements Serializable {
     private int idComentario;
     private String comentario;
     private Date fecha_comentario;

@@ -1,8 +1,10 @@
 package Model;
 
+import java.io.Serializable;
+
 import java.sql.*;
 
-public class recetasJB {
+public class recetasJB implements Serializable {
     private int ID_Recetas;
     private String titulo;
     private String descripcion;

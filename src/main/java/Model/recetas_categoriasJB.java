@@ -1,6 +1,8 @@
 package Model;
 
-public class recetas_categoriasJB {
+import java.io.Serializable;
+
+public class recetas_categoriasJB implements Serializable {
     private int ID_Recetas_categorias;
     private int ID_Recetas;
     private int ID_Categorias;
