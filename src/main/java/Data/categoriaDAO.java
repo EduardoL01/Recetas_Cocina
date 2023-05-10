@@ -64,18 +64,45 @@ public class categoriaDAO {
     }
 
     // modificar
-    public void modificar(categoriaJB categoria){
+    public void modificar(categoriaJB categoria) {
         Connection con;
         PreparedStatement st;
 
         try {
-            con=Conexion.getConnection();
+            con = Conexion.getConnection();
             assert con != null;
-            st=con.prepareStatement(modificar);
-            st.setString(1, eliminar);
-            st.setInt(2, categoria.getID_Categoria());
-        } catch (Exception e) {
-            // TODO: handle exception
+            st = con.prepareStatement(modificar);
+            st.setInt(1, categoria.getID_Categoria());
+            st.setString(2, categoria.getNombre());
+            if (st.executeUpdate() == 1) {
+                System.out.println("Registro Actualizado");
+            }
+            Conexion.close(con);
+            Conexion.close(st);
+
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Error");
+        }
+    }
+
+    // eliminar
+    public void eliminar(categoriaJB categoria) {
+        Connection con;
+        PreparedStatement st;
+
+        try {
+            con= Conexion.getConnection();
+            assert con != null;
+            st=con.prepareStatement(eliminar);
+            st.setInt(1, categoria.getID_Categoria());
+            if (st.executeUpdate()==1) {
+                System.out.println("Registro  Eliminado");
+            }
+            Conexion.close(con);
+            st.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
         }
     }
 }

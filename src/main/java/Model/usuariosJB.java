@@ -13,6 +13,9 @@ public class usuariosJB implements Serializable {
     public usuariosJB() {
     }
 
+    //validar usuario
+
+    
     //modificar y seleccinar
     public usuariosJB(int ID_Usuario ,String nombre, String apellido, String email, String contraseña, String tipo_usuario) {
         this.ID_Usuario = ID_Usuario;

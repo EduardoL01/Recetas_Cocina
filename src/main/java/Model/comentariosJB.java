@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.sql.Date;
 
 public class comentariosJB implements Serializable {
-    private int idComentario;
+    private int ID_Comentario;
     private String comentario;
     private Date fecha_comentario;
     private int ID_Usuario;
@@ -15,8 +15,8 @@ public class comentariosJB implements Serializable {
     }
 
     // seleccinar
-    public comentariosJB(int idComentario, String comentario, Date fecha_comentario, int ID_Usuario, int ID_Recetas) {
-        this.idComentario = idComentario;
+    public comentariosJB(int ID_Comentario, String comentario, Date fecha_comentario, int ID_Usuario, int ID_Recetas) {
+        this.ID_Comentario = ID_Comentario;
         this.comentario = comentario;
         this.fecha_comentario = fecha_comentario;
         this.ID_Usuario = ID_Usuario;
@@ -24,8 +24,7 @@ public class comentariosJB implements Serializable {
     }
 
     // modificar
-    public comentariosJB(int idComentario, String comentario, int ID_Usuario, int ID_Recetas) {
-        this.idComentario = idComentario;
+    public comentariosJB(int ID_Comentario, String comentario, int ID_Usuario, int ID_Recetas) {
         this.comentario = comentario;
         this.ID_Usuario = ID_Usuario;
         this.ID_Recetas = ID_Recetas;
@@ -39,16 +38,16 @@ public class comentariosJB implements Serializable {
     }
 
     // eliminar
-    public comentariosJB(int idComentario) {
-        this.idComentario = idComentario;
+    public comentariosJB(int ID_Comentario) {
+        this.ID_Comentario = ID_Comentario;
     }
 
-    public int getIdComentario() {
-        return idComentario;
+    public int getID_Comentario() {
+        return ID_Comentario;
     }
 
-    public void setIdComentario(int idComentario) {
-        this.idComentario = idComentario;
+    public void setID_Comentario(int ID_Comentario) {
+        this.ID_Comentario = ID_Comentario;
     }
 
     public String getComentario() {
