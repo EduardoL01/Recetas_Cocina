@@ -7,10 +7,10 @@ import java.sql.*;
 import Model.categoriaJB;
 
 public class categoriaDAO {
-    public static final String seleccionar = "Select * from categoria order by categoria";
+    public static final String seleccionar = "Select * from categoria order by nombre";
     public static final String insertar = "insert into categoria(nombre) values (?)";
     public static final String eliminar = "delete from categoria where ID_Categoria=?";
-    public static final String modificar = "update categoria set categoria=? where ID_Categoria=?";
+    public static final String modificar = "update categoria set nombre=? where ID_Categoria=?";
 
     // seleccionar
     public List<categoriaJB> Select() {

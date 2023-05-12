@@ -12,7 +12,7 @@ create table usuarios(
     tipo_usuario varchar(50)
 );
 --tabla dificultad
-create table dificultad(
+create table dificultades(
     ID_Dificultad serial primary key,
     dificultad varchar(10) not null
 );

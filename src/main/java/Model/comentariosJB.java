@@ -25,6 +25,7 @@ public class comentariosJB implements Serializable {
 
     // modificar
     public comentariosJB(int ID_Comentario, String comentario, int ID_Usuario, int ID_Recetas) {
+        this.ID_Comentario = ID_Comentario;
         this.comentario = comentario;
         this.ID_Usuario = ID_Usuario;
         this.ID_Recetas = ID_Recetas;
