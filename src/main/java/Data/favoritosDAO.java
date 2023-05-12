@@ -3,7 +3,6 @@ package Data;
 import java.util.*;
 import java.sql.*;
 
-import Model.comentariosJB;
 import Model.favoritosJB;
 
 public class favoritosDAO {

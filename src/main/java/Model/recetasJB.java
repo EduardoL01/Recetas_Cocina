@@ -8,8 +8,8 @@ public class recetasJB implements Serializable {
     private int ID_Recetas;
     private String titulo;
     private String descripcion;
-    private String porciones;
-    private String tiempo_preparacion;
+    private int porciones;
+    private Time tiempo_preparacion;
     private String ingredientes;
     private String instrucciones;
     public Date fecha_publicacion;
@@ -20,7 +20,7 @@ public class recetasJB implements Serializable {
     }
 
     // seleccinar
-    public recetasJB(int ID_Recetas, String titulo, String descripcion, String porciones, String tiempo_preparacion,
+    public recetasJB(int ID_Recetas, String titulo, String descripcion, int porciones, Time tiempo_preparacion,
             String ingredientes, String instrucciones, Date fecha_publicacion, int ID_Usuario, int ID_Dificultad) {
         this.ID_Recetas = ID_Recetas;
         this.titulo = titulo;
@@ -35,7 +35,7 @@ public class recetasJB implements Serializable {
     }
 
     // modificar
-    public recetasJB(int ID_Recetas, String titulo, String descripcion, String porciones, String tiempo_preparacion,
+    public recetasJB(int ID_Recetas, String titulo, String descripcion, int porciones, Time tiempo_preparacion,
             String ingredientes, String instrucciones, int ID_Usuario, int ID_Dificultad) {
         this.ID_Recetas = ID_Recetas;
         this.titulo = titulo;
@@ -49,7 +49,7 @@ public class recetasJB implements Serializable {
     }
 
     // insertar
-    public recetasJB(String titulo, String descripcion, String porciones, String tiempo_preparacion,
+    public recetasJB(String titulo, String descripcion, int porciones, Time tiempo_preparacion,
             String ingredientes, String instrucciones, int ID_Usuario, int ID_Dificultad) {
         this.titulo = titulo;
         this.descripcion = descripcion;
@@ -90,19 +90,19 @@ public class recetasJB implements Serializable {
         this.descripcion = descripcion;
     }
 
-    public String getPorciones() {
+    public int getPorciones() {
         return porciones;
     }
 
-    public void setPorciones(String porciones) {
+    public void setPorciones(int porciones) {
         this.porciones = porciones;
     }
 
-    public String getTiempo_preparacion() {
+    public Time getTiempo_preparacion() {
         return tiempo_preparacion;
     }
 
-    public void setTiempo_preparacion(String tiempo_preparacion) {
+    public void setTiempo_preparacion(Time tiempo_preparacion) {
         this.tiempo_preparacion = tiempo_preparacion;
     }
 
