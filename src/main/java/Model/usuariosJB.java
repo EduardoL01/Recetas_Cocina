@@ -13,14 +13,19 @@ public class usuariosJB implements Serializable {
     public usuariosJB() {
     }
 
-    //validar usuario
-
-    
     //modificar y seleccinar
     public usuariosJB(int ID_Usuario ,String nombre, String apellido, String email, String contraseña, String tipo_usuario) {
         this.ID_Usuario = ID_Usuario;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.email = email;
+        this.contraseña = contraseña;
+        this.tipo_usuario = tipo_usuario;
+    }
+
+    //validar usuario
+    public usuariosJB(int iD_Usuario, String email, String contraseña, String tipo_usuario) {
+        this.ID_Usuario = iD_Usuario;
         this.email = email;
         this.contraseña = contraseña;
         this.tipo_usuario = tipo_usuario;

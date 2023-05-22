@@ -11,6 +11,12 @@ public class usuariosDAO {
     public static final String eliminar = "delete from usuarios where ID_Usuario=?";
     public static final String modificar = "update usuarios set nombre=?, apellido=?, email=?, contraseña=?, tipo_usuario=? where ID_Usuario=?";
 
+    //validar usuarios
+    
+
+
+
+
     // seleccionar
     public List<usuariosJB> Select() {
         Statement st;
