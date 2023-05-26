@@ -1,6 +1,4 @@
--- create database recetas_cocina;
---Eduardo Garcia Lopez
---DAW 2023
+--create database recetas_cocina;
 
 --tabla de usuarios
 create table usuarios(
@@ -33,15 +31,19 @@ create table recetas(
     ingredientes varchar(250) not null,
     instrucciones varchar(970) not null,
     fecha_publicacion date default current_date,
+    ID_Usuario int,
+    ID_Dificultad int,
     --relacion con usuarios
     foreign key (ID_Usuario) references usuarios(ID_Usuario),
     --relacion con dificultad
-    foreign key (ID_Dificultad) references dificultad(ID_Dificultad)
+    foreign key (ID_Dificultad) references dificultades(ID_Dificultad)
 );
 
 --tabla de recetas_categorias
 create table recetas_categorias(
     ID_Recetas_Categorias serial primary key,
+    ID_Recetas int,
+    ID_Categoria int,
     --relacion con recetas
     foreign key (ID_Recetas) references recetas(ID_Recetas),
     --relacion con categoria
@@ -53,6 +55,8 @@ create table comentarios(
     ID_Comentario serial primary key,
     comentario varchar(250) not null,
     fecha_comentario date default current_date,
+    ID_Usuario int,
+    ID_Recetas int,
     --relacion con usuarios
     foreign key (ID_Usuario) references usuarios(ID_Usuario),
     --relacion con recetas
@@ -62,7 +66,9 @@ create table comentarios(
 --tabla favoritos
 create table favoritos(
     ID_Favoritos serial primary key,
-    --relacion con usuarios
+    ID_Usuario int,
+    ID_Recetas int,
+    --relacion con usuarios,
     foreign key (ID_Usuario) references usuarios(ID_Usuario),
     --relacion con recetas
     foreign key (ID_Recetas) references recetas(ID_Recetas)

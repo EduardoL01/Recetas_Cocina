@@ -2,6 +2,8 @@ package Data;
 
 import java.util.*;
 
+import Controller.Conexion;
+
 import java.sql.*;
 
 import Model.categoriaJB;
@@ -27,7 +29,7 @@ public class categoriaDAO {
 
             while (rs.next()) {
                 int ID_Categoria = rs.getInt("ID_Categoria");
-                String nombre = rs.getString("categoria");
+                String nombre = rs.getString("nombre");
 
                 cat = new categoriaJB(ID_Categoria, nombre);
                 categoria.add(cat);

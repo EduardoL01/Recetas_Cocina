@@ -1,2 +1,4 @@
-package Controller;public class categoria {
+package Controller;
+
+public class categoria {
 }

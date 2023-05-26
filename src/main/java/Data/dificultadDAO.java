@@ -1,6 +1,9 @@
 package Data;
 
 import java.util.*;
+
+import Controller.Conexion;
+
 import java.sql.*;
 import Model.dificultadJB;
 
