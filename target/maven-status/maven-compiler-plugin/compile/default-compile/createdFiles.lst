@@ -1,0 +1,15 @@
+Model\recetasJB.class
+Data\categoriaDAO.class
+Data\favoritosDAO.class
+Model\recetas_categoriasJB.class
+Data\recetas_categoriasDAO.class
+Data\usuariosDAO.class
+Model\categoriaJB.class
+Model\comentariosJB.class
+Model\dificultadJB.class
+Model\favoritosJB.class
+Data\dificultadDAO.class
+Data\comentariosDAO.class
+Data\recetasDAO.class
+Controller\Conexion.class
+Model\usuariosJB.class

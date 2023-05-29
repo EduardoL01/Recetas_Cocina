@@ -5,6 +5,8 @@ import java.util.*;
 import Controller.Conexion;
 
 import java.sql.*;
+import java.util.concurrent.Executor;
+
 import Model.usuariosJB;
 
 public class usuariosDAO {
@@ -12,12 +14,7 @@ public class usuariosDAO {
     public static final String insertar = "insert into usuarios(nombre, apellido, email, contraseña) values (?,?,?,?)";
     public static final String eliminar = "delete from usuarios where ID_Usuario=?";
     public static final String modificar = "update usuarios set nombre=?, apellido=?, email=?, contraseña=?, tipo_usuario=? where ID_Usuario=?";
-
-    //validar usuarios
-    
-
-
-
+    public static final String validar = "Select * from usuarios where email=? and contraseña=?";
 
     // seleccionar
     public List<usuariosJB> Select() {
@@ -64,7 +61,7 @@ public class usuariosDAO {
             st.setString(1, usuarios.getNombre());
             st.setString(2, usuarios.getApellido());
             st.setString(3, usuarios.getEmail());
-            st.setString(4, usuarios.getEmail());
+            st.setString(4, usuarios.getContraseña());
 
             if (st.executeUpdate() == 1) {
                 System.out.println("Registro Exitoso");
@@ -121,5 +118,43 @@ public class usuariosDAO {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
+    }
+
+    //validar usuarios
+    public usuariosJB login (String email, String contraseña){
+        PreparedStatement st ;
+        ResultSet rs ;
+        usuariosJB usuario=null;
+
+        try{
+            Connection con = Conexion.getConnection();
+            assert con != null;
+            st = con.prepareStatement(validar);
+            st.setString(1, email);
+            st.setString(2, contraseña);
+            rs= st.executeQuery();
+            while (rs.next())
+            {
+                int id=rs.getInt("ID_Usuario");
+                String nombre=rs.getString("nombre");
+                String apellido=rs.getString("apellido");
+                String u=rs.getString("email");
+                String pass=rs.getString("contraseña");
+                String tipo=rs.getString("tipo_usuario");
+
+                System.out.println(id+nombre+apellido+pass+u);
+                usuario=new usuariosJB(id,nombre,apellido,u,contraseña,tipo);
+
+            }
+
+            Conexion.close(st);
+            Conexion.close(rs);
+            Conexion.close(con);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return usuario;
     }
 }
