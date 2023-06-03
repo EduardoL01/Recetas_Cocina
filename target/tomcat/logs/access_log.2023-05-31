@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [31/May/2023:17:19:33 -0600] "GET /recetas_cocina HTTP/1.1" 302 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [31/May/2023:17:19:34 -0600] "GET /recetas_cocina/ HTTP/1.1" 200 193 http-bio-8080-exec-3 722
+0:0:0:0:0:0:0:1 - - [31/May/2023:17:20:59 -0600] "GET /recetas_cocina/Views/login.jsp HTTP/1.1" 200 1689 http-bio-8080-exec-5 31
+0:0:0:0:0:0:0:1 - - [31/May/2023:17:21:10 -0600] "GET /recetas_cocina/Views/registro.jsp HTTP/1.1" 200 1926 http-bio-8080-exec-8 16
