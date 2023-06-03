@@ -5,7 +5,6 @@ import java.util.*;
 import Controller.Conexion;
 
 import java.sql.*;
-import java.util.concurrent.Executor;
 
 import Model.usuariosJB;
 

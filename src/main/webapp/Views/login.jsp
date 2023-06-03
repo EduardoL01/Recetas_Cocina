@@ -14,18 +14,18 @@
         <h2>
             Inicio de sesion
         </h2>
-        <form action="" method="post">
+        <form action="../loginSV" method="post">
             <div class="card" style="width: 30rem;">
                 <div class="card-body">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label mt-2">Contraseña</label>
-                        <input type="password" class="form-control mt-2" id="exampleInputPassword1">
+                        <input type="password" name="contraseña" class="form-control mt-2" id="exampleInputPassword1">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                    <button type="submit" name="accion" value="ingresar" class="btn btn-primary mt-2">Submit</button>
                     <div class="mt-3">
                         <a href="registro.jsp">
                             ¿no tienes cuenta? registrate aqui
